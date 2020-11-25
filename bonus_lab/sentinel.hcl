@@ -1,6 +1,3 @@
-import "tfplan"
-
-main = rule {
-  tfplan.terraform_version matches "^0\\.12\\.\\d+$" 
+policy "restrict-s3-buckets" {
+    enforcement_level = "hard-mandatory"
 }
-
